@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  min-height: 40px;
+  width: 100%;
+}
+
+.input {
+  border: 1px solid transparent;
+  outline: none;
+  flex-grow: 1;
+  min-width: 50px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: var(--transition);
+}
+.input:hover,
+.input:focus {
+  border: 1px solid var(--blue);
+}
+.inputContainer {
+  position: relative;
+}
+.dropdown {
+  position: absolute;
+  top: 20px;
+  max-height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  background-color: #ccc;
+}
+
+.suggestionItem {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: var(--border);
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  background: #f0f0f0;
+  border: var(--border-active);
+}
+.operators {
+  display: flex;
+  gap: 4px;
+}
+.operatorButton {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: var(--border);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.operatorButton:hover,
+.operatorButton:focus {
+  border: var(--border-active);
+}

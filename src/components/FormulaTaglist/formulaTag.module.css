@@ -1,0 +1,64 @@
+.tagContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  border: var(--border);
+  transition: var(--transition);
+}
+.tagContainer:hover,
+.tagContainer:focus {
+  border: var(--border-active);
+}
+.editInput {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  min-width: 50px;
+}
+.tag {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #e0e0e0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.suggestions {
+  position: absolute;
+  top: 20px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  background-color: #edeaea;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.suggestionItem {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: var(--border);
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  background: #f0f0f0;
+  border: var(--border-active);
+}
+.removeIcon {
+  position: absolute;
+  top: -75%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  color: #666;
+  transition: var(--transition);
+}
+
+.removeIcon:hover {
+  color: #ff0000;
+}
