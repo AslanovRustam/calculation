@@ -10,11 +10,19 @@
 .tagContainer:focus {
   border: var(--border-active);
 }
+
 .editInput {
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   flex-grow: 1;
   min-width: 50px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+.editInput:hover,
+.editInput:focus {
+  border: 1px solid var(--blue);
 }
 .tag {
   position: relative;
@@ -36,6 +44,7 @@
   background-color: #edeaea;
   max-height: 300px;
   overflow-y: scroll;
+  z-index: 1;
 }
 .suggestionItem {
   display: flex;
